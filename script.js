@@ -3,19 +3,16 @@ function validateForm() {
   var email = document.getElementById("email").value;
   var program = document.getElementById("program").value;
 
-  var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
   if (name && email && program) {
-    if (emailPattern.test(email)) {
+    if (email.includes('@')) {
       alert("Form submitted!");
-      return true;
+      return true; 
     } else {
-      alert("Please enter a valid email address (example: user@domain.com)!");
-      return false;
+      alert("Please enter a valid email address with '@' symbol!");
+      return false; 
     }
   } else {
     alert("Form not complete!");
-    return false;
+    return false; 
   }
 }
-
