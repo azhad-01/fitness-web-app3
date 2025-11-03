@@ -3,7 +3,6 @@ function validateForm() {
   var email = document.getElementById("email").value;
   var program = document.getElementById("program").value;
 
-  // Simple email regex pattern
   var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (name && email && program) {
@@ -19,3 +18,4 @@ function validateForm() {
     return false;
   }
 }
+
